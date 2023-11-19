@@ -47,37 +47,229 @@
             nav ul li a{
                 color: #fff;
                 text-decoration: none;
+                font-size: 20px;
             }
-            .product-card {
-                border: 0px ;
-                border-radius: 8px;
-                padding: 10px;
-                margin: 10px;
+
+
+            /*About*/
+            .About{ 
+                background-color: #ffeaec;
+            }  
+            .About .title{
+                text-align: center;
+                display: flex;
+                justify-content: center;
+                margin-top: 15px;
+            }
+            .About .title p{
+                max-width: 900px;
+                font-size: 30px;
+                color: #5a5656;
+                padding-top: 1rem;
+            }
+            .About .title h3{
+                color: #5a5656;
+                font-size: 30px;
+                border: 1px solid #FFF;
+            }
+            .About .classesContent{
+                padding: 2rem 4%;
+                justify-content: space-between;
+                padding-top: 100px;
+            }
+
+
+             /*Custom*/
+            .custom{
+                background-image: url(bgcustom.jpg);
+                color: #5a5656;
+                padding: 3rem 4%;
+                border: #5a5656;
+            }
+
+            .custom .customcontent{
+                padding: 30px 50px;
+                background-color: #fcd9dacb;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border: 1px solid #f8b6ba;
+            }
+
+            .custom h5{
+                font-size: 55px;
+                color: #5a5656;
+                justify-content: start;
+            }
+            .custom .col:nth-child(1){
+                font-size: 10px;
+                display: flex;
+                justify-content: end;
+            }
+            .custom button{
+                padding: 20px 20px;
+                background-color: #f8b6ba;
+                color: #5a5656;
+                border: none;
+                border-radius: 5px;
+                margin-left: 150px;
+                width: 125px;
+                height: 75px;
+            }
+
+
+            /*Collection*/
+            .Collection{
+                background-color: #fcd9da;
+                color: #5a5656;
+                padding: 4rem 4%;
+            }
+
+            .Collection .title{
+                font-size: 30px;
                 text-align: center;
             }
 
+            .Collection .category{
+                display: flex;
+                justify-content: space-between;
+                margin-top: 70px;
+                align-items: center;
+            }
+
+            .Collection .category ul li{
+                display: inline-block;
+                margin-left: 30px;
+                padding: 5px 10px;
+                cursor: pointer;
+            }
+
+            .Collection .category .choose li:hover{
+                border: 1px solid #FFF;
+            }
+
+            .Collection .category .filter li{
+                border: 2px solid #FFF;
+                padding: 6px 20px;
+            }
+
+            .categoryContent{
+                margin-top: 20px;
+                padding: 1rem 4%;
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                row-gap: 30px;
+                background-color: #fcd9da;
+            }
+
+            .categoryContent .card{
+                width: 350px;
+                background-color: #fdc4c9e5;
+                border: 1px solid #FFF;
+                padding: 10px;
+                cursor: pointer;
+            }
+
+            .categoryContent .cardImg{
+                border: 1px solid #FFF;
+                padding: 10px;
+                overflow: hidden;
+            }
+
+            .categoryContent .card img{
+                width: 100%;
+            }
+
+            .categoryContent .card:hover img{
+                transform: scale(1.1);
+                transition: .5s;
+            }
+
+            .categoryContent .cardText h3{
+                font-size: 35px;
+                margin: 10px 0;
+            }
+
             .order-button {
-                background-color: #f8b6ba;
-                color: #fff;
+                background-color: #fff;
+                color: #5a5656;
                 border: none;
                 padding: 8px 15px;
                 border-radius: 0px;
                 cursor: pointer;
             }
-            .product-image {
-                max-width: 100%;
-                height: auto;
-                border-radius: 0px;
-                margin-bottom: 10px;
+            .categoryContent .ratting i{
+                color: #fff;
+                margin-right: 5px;
             }
-            .Text_BestSeller{
+
+            .categoryContent .price{
+                display: flex;
+                margin-top: 10px;
+            }
+
+            .categoryContent .price P:nth-child(2){
+                margin-left: 20px;
+                text-decoration: line-through;
+            }
+
+
+            /*review*/
+            .review .title p{
+                color: #5a5656;
+                font-size: 40px;
                 text-align: center;
-                color: black;
-                display: flexbox;
-                margin-top: 50px;
-                font-size: 50px;
-                font-family: 'Agbalumo', sans-serif;
+                margin-top: 20px;
+                margin-bottom: 5px;
+                border: 2px solid #fff;
             }
+            .review {
+                margin: 0;
+                padding: 0;
+                background-color: #ffeaec;
+                overflow-x: hidden;
+            }
+
+            .reviewcontainer {
+                display: flex;
+                margin-top: 0px;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+            }
+
+            .reviewcon {
+                background-color: #ffedef;
+                border-radius: 8px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                overflow: hidden;
+                max-width: 400px;
+                width: 100%;
+                margin: 0 20px; 
+                transition: transform 0.3s ease; 
+                cursor: pointer;
+            }
+
+            .reviewcon img {
+                width: 100%;
+                height: auto;
+                border-bottom: 1px solid #ddd;
+            }
+            .reviewcon h1{
+                font-size: 25px;
+                text-align: center;
+            }
+            .reviewcon-text {
+                padding: 20px;
+                margin: 0;
+            }
+            .reviewcon:hover {
+                transform: translateX(5px);
+            }
+
+
+            /*Footer*/
             footer{
                 background-color: #e79699;
                 padding: 2%;
@@ -122,6 +314,17 @@
                 font-size: 30px;
                 margin-left: 20px;
             }
+            @keyframes moveText {
+                0% { transform: translateX(0); }
+                50% { transform: translateX(200px); }
+                100% { transform: translateX(0); }
+            }
+
+            .moving-text {
+                font-size: 24px;
+                color: #333;
+                animation: moveText 4s linear infinite; /* Mengatur durasi dan jenis animasi */
+            }
         </style>
     </head>
     <body>
@@ -131,8 +334,9 @@
                     <img src="logo.png" class="logo">
                     <ul>
                         <li><a href="#">Home</a></li>
-                        <li><a href="#">Best Seller</a></li>
-                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Collection</a></li>
+                        <li><a href="#">Contact</a></li>
                         <li><a href=""><i class="fas fa-search"></i></a></li>
                         <li><a href=""><i class="fas fa-shopping-cart"></i></a></li>
                         <li><a href=""><i class="fas fa-user"></i></a></li>
@@ -157,36 +361,127 @@
                 </button>
               </div>
         </div>
-        <div class="Con">
-            <div class="Text_BestSeller">BEST SELLER</div>
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="product-card">
-                        <img src="f.png" alt="Product Image" class="product-image">
-                        <h2>Filter 1</h2>
-                        <p>Description of the product goes here.</p>
-                        <p>Rp 10.000</p>
+        <section class="About">
+            <div class="Abouttitle">
+                <div class="title">
+                    <p>Welcome to our website, where creativity and style converge! We are an innovative platform that allows you to express yourself through customizable Instagram filters. With a variety of creative options, you can create unique looks that reflect your personal style. Happy creating!</p>
+                </div>
+            </div>
+        </section>
+        <section class="custom">
+            <div class="customcontent">
+                <div class="col">
+                    <h5> Custom by Your Own Style</h5>
+                </div>
+                <div class="col">
+                    <button>CUSTOM</button><br>
+                </div>
+                <div class="col">
+                    <p>Get 25% OFF by sign up to our website. <a href="Registerpage.html">/Sign Up</a></p>
+                </div>
+            </div>
+        </section>
+        <section class="Collection">
+            <div class="title">
+                <h3><b>OUR COLLECTIONS</b></h3>
+            </div>
+    
+            <div class="category">
+                <ul class="choose">
+                    <li>Recomended</li>
+                    <li>Top Rated</li>
+                    <li>New Arrival</li>
+                    <li>Best Promo</li>
+                </ul>
+            </div>
+    
+            <div class="categoryContent">
+                <div class="card">
+                    <div class="cardImg">
+                        <img src="f.png" alt="">
+                    </div>
+                    <div class="cardText">
+                        <h3>FILTER 1</h3>
+                        <div class="ratting">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="price">
+                            <p>Rp. 175.000</p>
+                            <p>Rp. 200.000</p>
+                        </div>
                         <button class="order-button">Order Now</button>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="product-card">
-                        <img src="f.png" alt="Product Image" class="product-image">
-                        <h2>Filter 2</h2>
-                        <p>Description of the product goes here.</p>
-                        <p>Rp 10.000</p>
+                <div class="card">
+                    <div class="cardImg">
+                        <img src="f.png" alt="">
+                    </div>
+                    <div class="cardText">
+                        <h3>FILTER 2</h3>
+                        <div class="ratting">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="price">
+                            <p>Rp. 200.000</p>
+                            <p>Rp. 250.000</p>
+                        </div>
                         <button class="order-button">Order Now</button>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="product-card">
-                        <img src="f.png" alt="Product Image" class="product-image">
-                        <h2>Filter 3</h2>
-                        <p>Description of the product goes here.</p>
-                        <p>Rp 10.000</p>
+                <div class="card">
+                    <div class="cardImg">
+                        <img src="f.png" alt="">
+                    </div>
+                    <div class="cardText">
+                        <h3>FILTER 3</h3>
+                        <div class="ratting">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="price">
+                            <p>Rp. 275.000</p>
+                            <p>Rp. 300.000</p>
+                        </div>
                         <button class="order-button">Order Now</button>
                     </div>
                 </div>
+            </div>
+        </section>
+
+        <section class="Review">
+            <div class="title">
+                <p>REVIEW</p>
+            </div>
+            <div class="reviewcontainer">
+                <div class="reviewcon">
+                    <img src="review1.jpg" alt="Instagram Filter">
+                    <h1 class="review-on">Annie- Filter 2</h1>
+                    <p class="review-text">Exceptional quality, friendly service, and a seamless shopping experience—this Instagram shop has it all.</p>
+                </div>
+                <div class="reviewcon">
+                    <img src="review2.jpg" alt="Instagram Filter">
+                    <h1 class="review-on">Dasha - Filter 3</h1>
+                    <p class="review-text">High-quality products, responsive service, and smooth transactions make this Instagram store a must-try.</p>
+                </div>
+                <div class="reviewcon">
+                    <img src="review3.jpg" alt="Instagram Filter">
+                    <h1 class="review-on">Lana - Custom Filter</h1>
+                    <p class="review-text">The quality of the filters exceeded expectations, adding a new level of creativity to social media posts.</p>
+                </div>
+             </div>
+             <div class="moving-text">Tulisan Bergerak</div>
+        </section>
                 <footer> 
                     <div class="social-media">
                         <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjxo6a6vsWCAxVT4zgGHYOLBb0QFnoECAgQAQ&url=https%3A%2F%2Faccounts.google.com%2Flogin%3Fhl%3Din&usg=AOvVaw0RtotuqhFEjBVJCujhLHzD&opi=89978449">
