@@ -1,0 +1,499 @@
+<html>
+    <head>
+        <title> Jasa Filter Instagram </title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css2?family=Agbalumo&display=swap" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="font-awesome-5/css/fontawesome-all.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Signika+Negative&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,500&family=Merienda:wght@500&family=Playball&family=Signika+Negative&family=Source+Serif+4:ital,opsz,wght@1,8..60,600&display=swap" rel="stylesheet">
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+                font-family: 'Signika Negative', sans-serif;
+                box-sizing: border-box;
+            }
+            .Con{
+                width: 100%;
+                min-height: 100vh;
+                background-size: cover;
+                background-position: center;
+                background-color: #fcd9da;
+            }
+            .menu_bar{
+                background-color:#f8b6ba ;
+                height: 70px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                box-sizing: border-box;
+            }
+            .logo{
+                width: 135px;
+                cursor: pointer;
+                margin-left: 60px;
+            }
+            nav ul{
+                list-style: none;
+                width: 100%;
+                text-align: right;
+                padding-right: 60px;
+                padding-top: 15px;
+            }
+            nav ul li{
+                display: inline-block;
+                margin: 15px 20px;
+            }
+            nav ul li a{
+                color: #fff;
+                text-decoration: none;
+                font-size: 20px;
+            }
+
+
+            /*About*/
+            .About{ 
+                background-color: #ffeaec;
+                height: 35vh;
+            }  
+            .About .title{
+                text-align: center;
+                display: flex;
+                justify-content: center;
+                margin-top: 10px;
+            }
+            .About .title p{
+                max-width: 900px;
+                font-size: 30px;
+                color: #5a5656;
+                padding-top: 1rem;
+                font-family: 'Playball';
+                margin-top: 25px;
+            }
+            .About .title h3{
+                color: #5a5656;
+                font-size: 30px;
+                border: 1px solid #FFF;
+            }
+            .About .classesContent{
+                padding: 2rem 4%;
+                justify-content: space-between;
+                padding-top: 100px;
+            }
+
+
+             /*Custom*/
+            .custom{
+                background-image: url(bgcustom.jpg);
+                color: #5a5656;
+                padding: 3rem 4%;
+                border: #5a5656;
+            }
+
+            .custom .customcontent{
+                padding: 30px 50px;
+                background-color: #fcd9dacb;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border: 1px solid #f8b6ba;
+            }
+
+            .custom h5{
+                font-size: 55px;
+                color: #5a5656;
+                justify-content: start;
+            }
+            .custom .col:nth-child(1){
+                font-size: 10px;
+                display: flex;
+                justify-content: end;
+            }
+            .custom button{
+                padding: 20px 20px;
+                background-color: #f8b6ba;
+                color: #5a5656;
+                border: none;
+                border-radius: 20px;
+                margin-left: 100px;
+                width: 150px;
+                height: 65px;
+            }
+
+
+            /*Collection*/
+            .Collection{
+                background-color: #fcd9da;
+                color: #5a5656;
+                padding: 4rem 4%;
+            }
+
+            .Collection .title{
+                font-size: 30px;
+                text-align: center;
+            }
+
+            .Collection .category{
+                display: flex;
+                justify-content: space-between;
+                margin-top: 70px;
+                align-items: center;
+            }
+
+            .Collection .category ul li{
+                display: inline-block;
+                margin-left: 30px;
+                padding: 5px 10px;
+                cursor: pointer;
+            }
+
+            .Collection .category .choose li:hover{
+                border: 1px solid #FFF;
+            }
+
+            .Collection .category .filter li{
+                border: 2px solid #FFF;
+                padding: 6px 20px;
+            }
+
+            .categoryContent{
+                margin-top: 20px;
+                padding: 1rem 4%;
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                row-gap: 30px;
+                background-color: #fcd9da;
+            }
+
+            .categoryContent .card{
+                width: 350px;
+                background-color: #fdc4c9e5;
+                border: 1px solid #FFF;
+                padding: 10px;
+                cursor: pointer;
+            }
+
+            .categoryContent .cardImg{
+                border: 1px solid #FFF;
+                padding: 10px;
+                overflow: hidden;
+            }
+
+            .categoryContent .card img{
+                width: 100%;
+            }
+
+            .categoryContent .card:hover img{
+                transform: scale(1.1);
+                transition: .5s;
+            }
+
+            .categoryContent .cardText h3{
+                font-size: 35px;
+                margin: 10px 0;
+            }
+
+            .order-button {
+                background-color: #fff;
+                color: #5a5656;
+                border: none;
+                padding: 8px 15px;
+                border-radius: 10px;
+                cursor: pointer;
+            }
+            .categoryContent .ratting i{
+                color: #fff;
+                margin-right: 5px;
+            }
+
+            .categoryContent .price{
+                display: flex;
+                margin-top: 10px;
+            }
+
+            .categoryContent .price P:nth-child(2){
+                margin-left: 20px;
+                text-decoration: line-through;
+            }
+
+
+            /*review*/
+            .review .title p{
+                color: #5a5656;
+                font-size: 40px;
+                text-align: center;
+                margin-top: 20px;
+                margin-bottom: 5px;
+                border: 2px solid #fff;
+                font-family: 'Playball',arial;
+            }
+            .review {
+                margin: 0;
+                padding: 0;
+                background-color: #ffeaec;
+                overflow-x: hidden;
+            }
+
+            .reviewcontainer {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 75vh;
+            }
+
+            .reviewcon {
+                background-color: #ffedef;
+                border-radius: 8px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                overflow: hidden;
+                max-width: 400px;
+                width: 100%;
+                margin: 0 20px; 
+                transition: transform 0.3s ease; 
+                cursor: pointer;
+            }
+
+            .reviewcon img {
+                width: 100%;
+                height: auto;
+                border-bottom: 1px solid #ddd;
+            }
+            .reviewcon h1{
+                font-size: 25px;
+                text-align: center;
+            }
+            .reviewcon-text {
+                padding: 20px;
+                margin: 0;
+            }
+            .reviewcon:hover {
+                transform: translateX(5px);
+            }
+
+
+            /*Footer*/
+            footer{
+                background-color: #e79699;
+                padding: 2%;
+                color: #fff;
+            }
+            footer .social-media {
+                text-align: center;
+                margin-top: 20px;
+                margin-left: 5px;
+            }
+            footer .social-media a {
+                margin-left: 10px;
+                text-decoration: none;
+            }
+            footer .footerContent{
+                text-align: center;
+                margin-bottom: 10px;
+            }
+            footer ul{
+                list-style: none;
+                margin-right: 15px;
+            }
+            footer h3{
+                margin-bottom: 20px;
+                text-align: center;
+            }
+            footer ul li{
+                margin-bottom: 15px;
+                text-align: center;
+            }
+            footer ul li i{
+                margin-right: 10px;
+                text-align: center;
+                cursor: pointer;
+            }
+            footer a{
+                text-decoration: none;
+                color: #fff;
+            }
+            .info{
+                text-align: center;
+                font-size: 30px;
+                margin-left: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="Con">
+            <nav>
+                <div class="menu_bar">
+                    <img src="logo.png" class="logo">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Collection</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href=""><i class="fas fa-search"></i></a></li>
+                        <li><a href=""><i class="fas fa-envelope" style="color: #ffffff;"></i></a></li>
+                        <li><a href=""><i class="fas fa-user"></i></a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div id="carouselExample" class="carousel slide">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="slide1.png" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="slide2.png" class="d-block w-100" alt="...">
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+        </div>
+        <section class="About">
+            <div class="Abouttitle">
+                <div class="title">
+                    <p>Welcome to our website, where creativity and style converge! We are an innovative platform that allows you to express yourself through customizable Instagram filters. With a variety of creative options, you can create unique looks that reflect your personal style. Happy creating!</p>
+                </div>
+            </div>
+        </section>
+        <section class="custom">
+            <div class="customcontent">
+                <div class="col">
+                    <h5> Custom by Your Own Style</h5>
+                </div>
+                <div class="col">
+                    <button>CUSTOM NOW</button><br>
+                </div>
+                <div class="col">
+                    <p><b>Get 25% OFF by sign up to our website.</b> <a href="Registerpage.html">/Sign Up</a></p>
+                </div>
+            </div>
+        </section>
+        <section class="Collection">
+            <div class="title">
+                <h3><b>OUR COLLECTIONS</b></h3>
+            </div>
+    
+            <div class="category">
+                <ul class="choose">
+                    <li>Recomended</li>
+                    <li>Best Seller</li>
+                    <li>New Filter</li>
+                    <li>Best Promo</li>
+                </ul>
+            </div>
+    
+            <div class="categoryContent">
+                <div class="card">
+                    <div class="cardImg">
+                        <img src="f.png" alt="">
+                    </div>
+                    <div class="cardText">
+                        <h3>FILTER 1</h3>
+                        <div class="ratting">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="price">
+                            <p>Rp. 175.000</p>
+                            <p>Rp. 200.000</p>
+                        </div>
+                        <button class="order-button">Order Now</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="cardImg">
+                        <img src="f.png" alt="">
+                    </div>
+                    <div class="cardText">
+                        <h3>FILTER 2</h3>
+                        <div class="ratting">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="price">
+                            <p>Rp. 200.000</p>
+                            <p>Rp. 250.000</p>
+                        </div>
+                        <button class="order-button">Order Now</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="cardImg">
+                        <img src="f.png" alt="">
+                    </div>
+                    <div class="cardText">
+                        <h3>FILTER 3</h3>
+                        <div class="ratting">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="price">
+                            <p>Rp. 275.000</p>
+                            <p>Rp. 300.000</p>
+                        </div>
+                        <button class="order-button">Order Now</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="Review">
+            <div class="title">
+                <p>Testimony</p>
+            </div>
+            <div class="reviewcontainer">
+                <div class="reviewcon">
+                    <img src="review1.jpg" alt="Instagram Filter">
+                    <h1 class="review-on">Annie- Filter 2</h1>
+                    <p class="review-text">Exceptional quality, friendly service, and a seamless shopping experience—this Instagram shop has it all.</p>
+                </div>
+                <div class="reviewcon">
+                    <img src="review2.jpg" alt="Instagram Filter">
+                    <h1 class="review-on">Dasha - Filter 3</h1>
+                    <p class="review-text">High-quality products, responsive service, and smooth transactions make this Instagram store a must-try.</p>
+                </div>
+                <div class="reviewcon">
+                    <img src="review3.jpg" alt="Instagram Filter">
+                    <h1 class="review-on">Lana - Custom Filter</h1>
+                    <p class="review-text">The quality of the filters exceeded expectations, adding a new level of creativity to social media posts.</p>
+                </div>
+             </div>
+        </section>
+                <footer> 
+                    <div class="social-media">
+                        <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjxo6a6vsWCAxVT4zgGHYOLBb0QFnoECAgQAQ&url=https%3A%2F%2Faccounts.google.com%2Flogin%3Fhl%3Din&usg=AOvVaw0RtotuqhFEjBVJCujhLHzD&opi=89978449">
+                            <img src="Google.png" alt="Google" width="30" height="30"> 
+                            </a>
+                        <a href="https://www.instagram.com/?hl=en">
+                            <img src="IG.png" alt="Instagram" width="30" height="30"></a>   
+                    </div>         
+                    <div class="footerContent">
+                        <div class="col">
+                            <div class="info"> <b>Contact Us</b></div>
+                            <ul>
+                                <li><i class="fas fa-map-marker"></i>Universitas Klabat. North Sulawesi</li>
+                                <li><i class="fas fa-phone"></i>08123456789</li>
+                                <li><i class="fas fa-envelope"></i>WebdesignGroup7@gmail.com</li>
+                            </ul>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </body>
+</html>
